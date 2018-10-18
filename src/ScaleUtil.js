@@ -1,8 +1,8 @@
 class ScaleUtil
 {
-    static scale(target,  mode,
+    static scale(target, mode,
                  targetW, targetH,
-                 destW,   destH,
+                 destW, destH,
                  minZoom, maxZoom) {
         if (mode === ScaleUtil.EXACT_FIT) {
             target.scale.x = destW / targetW;
