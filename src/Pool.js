@@ -1,7 +1,5 @@
-export default class Pool
+class Pool
 {
-    static pools = [];
-    
     static get(Type, autoFree = false)
     {
         const pool = this.getPool(Type);
@@ -31,3 +29,5 @@ export default class Pool
         array.length = 0;
     }
 }
+
+Pool.pools = [];
