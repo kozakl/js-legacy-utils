@@ -32,14 +32,20 @@ class MathUtil
     
     static hitPoint(px, py, x, y, w, h)
     {
-        return this.hitTest(px, py, 1, 1,
-                            x,  y,  w, h);
+        return MathUtil.hitTest(
+            px, py, 1, 1,
+            x,  y,
+            w, h
+        );
     }
     
     static hitRect(px, py, rect)
     {
-        return this.hitTest(px, py, 1, 1, rect.x,     rect.y,
-                                          rect.width, rect.height);
+        return MathUtil.hitTest(
+            px, py, 1, 1,
+            rect.x, rect.y,
+            rect.width, rect.height
+        );
     }
     
     static distancePoint(x1, y1,
