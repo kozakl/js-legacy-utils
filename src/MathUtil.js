@@ -7,7 +7,7 @@ class MathUtil
     
     static rndIntRange(min, max)
     {
-        return Math.round(this.rndRange(min, max));
+        return Math.round(MathUtil.rndRange(min, max));
     }
     
     static rndSign()
