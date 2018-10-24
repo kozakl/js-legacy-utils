@@ -5,9 +5,9 @@ class SoundUtil
         const n = Howler._howls.length;
         for (let i = 0; i < n; ++i)
         {
-            const howl   = Howler._howls[i],
+            const howl = Howler._howls[i],
                   sounds = howl._sounds,
-                  m      = sounds.length;
+                  m = sounds.length;
             for (let j = 0; j < m; ++j)
             {
                 const sound = sounds[j];
@@ -24,9 +24,9 @@ class SoundUtil
         const n = Howler._howls.length;
         for (let i = 0; i < n; ++i)
         {
-            const howl   = Howler._howls[i],
+            const howl = Howler._howls[i],
                   sounds = howl._sounds,
-                  m      = sounds.length;
+                  m = sounds.length;
             for (let j = 0; j < m; ++j)
             {
                 const sound = sounds[j];
