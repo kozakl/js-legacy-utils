@@ -1,5 +1,15 @@
 class ArrayUtil
 {
+    static removeNull(array)
+    {
+        for (let i = array.length; i--;) {
+            if (!array[i])  
+                array.splice(i, 1);
+        }
+        
+        return array;
+    }
+    
     static shuffle(array)
     {
         for (let i = array.length; i--;)
@@ -8,16 +18,6 @@ class ArrayUtil
                   t = array[i];
             array[i] = array[j];
             array[j] = t;
-        }
-        
-        return array;
-    }
-    
-    static removeNull(array)
-    {
-        for (let i = array.length; i--;) {
-            if (!array[i])  
-                array.splice(i, 1);
         }
         
         return array;
