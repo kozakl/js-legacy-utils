@@ -4,6 +4,10 @@ class ArrayUtil
         return array[0];
     }
     
+    static last(array) {
+        return array[array.length - 1];
+    }
+    
     static removeNull(array)
     {
         for (let i = array.length; i--;) {
