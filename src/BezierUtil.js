@@ -50,4 +50,12 @@ class BezierUtil
         result.y = y1 + t * (2*ay + t*by);
         return result;
     }
+    
+    static pointOnQuadCurveX(x1, cx,
+                             x2, t) {
+        const ax = cx - x1,
+              bx = x2 - cx - ax;
+        
+        return x1 + t * (2*ax + t*bx);
+    }
 }
