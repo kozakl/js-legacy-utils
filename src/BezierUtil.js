@@ -1,19 +1,5 @@
 class BezierUtil
 {
-    static pointOnQuadCurve(x1, y1,
-                            cx, cy,
-                            x2, y2,
-                            t, result) {
-        const ax = cx - x1,
-              ay = cy - y1,
-              bx = x2 - cx - ax,
-              by = y2 - cy - ay;
-        
-        result.x = x1 + t * (2*ax + t*bx);
-        result.y = y1 + t * (2*ay + t*by);
-        return result;
-    }
-    
     static pointOnCubicCurve(x1, y1,
                              c1x, c1y,
                              c2x, c2y,
@@ -49,5 +35,19 @@ class BezierUtil
               cy = y2 - c2y - ay - by - by;
         
         return y1 + t * (3*ay + (t * (3*by + t*cy)));
+    }
+    
+    static pointOnQuadCurve(x1, y1,
+                            cx, cy,
+                            x2, y2,
+                            t, result) {
+        const ax = cx - x1,
+              ay = cy - y1,
+              bx = x2 - cx - ax,
+              by = y2 - cy - ay;
+        
+        result.x = x1 + t * (2*ax + t*bx);
+        result.y = y1 + t * (2*ay + t*by);
+        return result;
     }
 }
