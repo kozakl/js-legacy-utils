@@ -1,5 +1,9 @@
 class ArrayUtil
 {
+    static first(array) {
+        return array[0];
+    }
+    
     static removeNull(array)
     {
         for (let i = array.length; i--;) {
