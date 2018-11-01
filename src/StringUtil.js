@@ -1,4 +1,4 @@
-export default class StringUtil
+class StringUtil
 {
     static isFilled(string)
     {
@@ -17,7 +17,8 @@ export default class StringUtil
     
     static isValidEmail(string)
     {
-        return /\S+@\S+\.\S+/.test(string);
+        console.log('StringUtil::isValidEmail is deprecated use Validate::iseEmail instead');
+        Validate.isEmail(string);
     }
     
     static formatNumber1(n)
