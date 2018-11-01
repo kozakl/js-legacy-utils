@@ -1,4 +1,4 @@
-export default class StringUtil
+class StringUtil
 {
     static isFilled(string)
     {
