@@ -69,6 +69,7 @@ class MathUtil
     static rotatePoint(cx, cy,
                        px, py,
                        a, result) {
+        console.log('MathUtil::rotatePoint is deprecated');
         const asin = Math.sin(a),
               acos = Math.cos(a);
         
