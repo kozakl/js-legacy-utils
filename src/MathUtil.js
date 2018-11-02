@@ -1,22 +1,18 @@
 class MathUtil
 {
-    static rndRange(min, max)
-    {
+    static rndRange(min, max) {
         return min + (Math.random() * (max - min));
     }
     
-    static rndIntRange(min, max)
-    {
+    static rndIntRange(min, max) {
         return Math.round(MathUtil.rndRange(min, max));
     }
     
-    static rndSign()
-    {
+    static rndSign() {
         return Math.random() > 0.5 ? 1 : -1;
     }
     
-    static clamp(value, min, max)
-    {
+    static clamp(value, min, max) {
         return Math.max(min, Math.min(value, max));
     }
     
@@ -62,13 +58,11 @@ class MathUtil
         return dx*dx + dy*dy;
     }
     
-    static fabs(x)
-    {
+    static fabs(x) {
         return x < 0 ? -x : x;
     }
     
-    static abs(x)
-    {
+    static abs(x) {
         return (x + (x >> 31)) ^ (x >> 31);
     }
     
