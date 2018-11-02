@@ -66,6 +66,10 @@ class MathUtil
         return (x + (x >> 31)) ^ (x >> 31);
     }
     
+    static sign(x) {
+        return Math.abs(x) / x;
+    }
+    
     static rotatePoint(cx, cy,
                        px, py,
                        a, result) {
