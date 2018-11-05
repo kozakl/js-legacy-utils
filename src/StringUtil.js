@@ -59,6 +59,7 @@ class StringUtil
     
     static formatNumber1(n)
     {
+        console.log('StringUtil::formatNumber1 is deprecated use StringUtil::pad1 instead');
         if (n < 10)
             return '0' + n;
         return n;
@@ -66,6 +67,7 @@ class StringUtil
     
     static formatNumber2(n)
     {
+        console.log('StringUtil::formatNumber2 is deprecated use StringUtil::pad2 instead');
         if (n < 10)
             return '00' + n;
         else if (n < 100)
