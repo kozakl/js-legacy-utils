@@ -17,6 +17,22 @@ class StringUtil
                str.substring(end);
     }
     
+    static pad1(n)
+    {
+        if (n < 10)
+            return '0' + n;
+        return '' + n;
+    }
+    
+    static pad2(n)
+    {
+        if (n < 10)
+            return '00' + n;
+        else if (n < 100)
+            return '0' + n;
+        return '' + n;
+    }
+    
     static isFilled(string)
     {
         console.log('StringUtil::isFilled is deprecated use Validate::isFill instead');
