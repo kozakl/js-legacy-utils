@@ -2,7 +2,8 @@ class StringUtil
 {
     static isFilled(string)
     {
-        return /\S/.test(string);
+        console.log('StringUtil::isFilled is deprecated use Validate::isFill instead');
+        Validate.isFill(string);
     }
     
     static firstToLower(string)
