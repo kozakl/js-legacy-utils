@@ -1,5 +1,11 @@
 class StringUtil
 {
+    static lowerFirst(str)
+    {
+        return str.substr(0, 1).toLowerCase() +
+               str.substr(1);
+    }
+    
     static isFilled(string)
     {
         console.log('StringUtil::isFilled is deprecated use Validate::isFill instead');
