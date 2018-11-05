@@ -6,6 +6,12 @@ class StringUtil
                str.substr(1);
     }
     
+    static upperFirst(str)
+    {
+        return str.substr(0, 1).toUpperCase() +
+               str.substr(1);
+    }
+    
     static isFilled(string)
     {
         console.log('StringUtil::isFilled is deprecated use Validate::isFill instead');
