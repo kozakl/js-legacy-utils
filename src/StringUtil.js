@@ -20,11 +20,13 @@ class StringUtil
     
     static firstToLower(string)
     {
+        console.log('StringUtil::firstToLower is deprecated use StringUtil::lowerFirst instead');
         return string.substr(0, 1).toLowerCase() + string.substr(1);
     }
     
     static firstToUpper(string)
     {
+        console.log('StringUtil::firstToUpper is deprecated use StringUtil::upperFirst instead');
         return string.substr(0, 1).toUpperCase() + string.substr(1);
     }
     
