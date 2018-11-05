@@ -12,6 +12,11 @@ class StringUtil
                str.substr(1);
     }
     
+    static removeSubstr(str, start, end) {
+        return str.substring(0, start) +
+               str.substring(end);
+    }
+    
     static isFilled(string)
     {
         console.log('StringUtil::isFilled is deprecated use Validate::isFill instead');
