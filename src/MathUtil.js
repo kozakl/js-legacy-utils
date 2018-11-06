@@ -69,18 +69,6 @@ class MathUtil
     static sign(x) {
         return Math.abs(x) / x;
     }
-    
-    static rotatePoint(cx, cy,
-                       px, py,
-                       a, result) {
-        console.log('MathUtil::rotatePoint is deprecated');
-        const asin = Math.sin(a),
-              acos = Math.cos(a);
-        
-        result.x = cx + acos*(px-cx) - asin*(py-cy);
-        result.y = cy + asin*(px-cx) + acos*(py-cy);
-        return result;
-    }
 }
 
 MathUtil.RADIANS = Math.PI / 180;

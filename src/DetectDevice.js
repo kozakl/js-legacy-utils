@@ -24,13 +24,11 @@ class DetectDevice
         return DetectDevice.device = 'desktop';
     }
     
-    static isDesktop()
-    {
+    static isDesktop() {
         return Number(DetectDevice.detect() === 'desktop');  
     }
     
-    static isMobile()
-    {
+    static isMobile() {
         return Number(DetectDevice.detect() !== 'desktop');
     }
     

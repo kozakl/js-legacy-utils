@@ -9,8 +9,7 @@ class Pool
             return autoFree ? this.free(Type, new Type()) : new Type();
     }
     
-    static getPool(Type)
-    {
+    static getPool(Type) {
         return this.pools[Type] || (this.pools[Type] = []);
     }
     
