@@ -7,4 +7,15 @@ class Validate
     static isEmail(str) {
         return /\S+@\S+\.\S+/.test(str);
     }
+    
+    static toBoolean(str)
+    {
+        switch (str) {
+            case 'true':
+            case '1':
+                return true;
+            default:
+                return false;
+        }
+    }
 }
