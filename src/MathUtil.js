@@ -73,3 +73,4 @@ class MathUtil
 
 MathUtil.RADIANS = Math.PI / 180;
 MathUtil.DEGREES = 180 / Math.PI;
+MathUtil.PI_2 = Math.PI * 2;
