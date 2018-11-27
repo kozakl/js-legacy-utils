@@ -9,6 +9,15 @@ class TextureUtil
         return frames;
     }
     
+    static copyFramesWithStart(frames, start, end, path)
+    {
+        frames = frames || [];
+        for (let i = start || 1; i <= end; ++i)
+            frames[frames.length] = PIXI.Texture.fromFrame(path + '/frame' + i + '.png');
+        
+        return frames;
+    }
+    
     static rename(path, name)
     {
         PIXI.Texture.addTextureToCache(
