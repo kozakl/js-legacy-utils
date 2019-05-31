@@ -69,6 +69,13 @@ class MathUtil
     static sign(x) {
         return Math.abs(x) / x;
     }
+    
+    static distanceInCircle(angle1, angle2) {
+        const diff = (angle1 > angle2 ?
+                      angle1 - angle2 :
+                      angle2 - angle1) % 360;
+        return diff > 180 ? 360 - diff : diff;
+    }
 }
 
 MathUtil.RADIANS = Math.PI / 180;
