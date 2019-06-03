@@ -1,15 +1,13 @@
 class FullScreen
 {
-    static isSupported()
-    {
+    static isSupported() {
         return !!(document.documentElement.requestFullscreen ||
                   document.documentElement.webkitRequestFullscreen ||
                   document.documentElement.mozRequestFullScreen ||
                   document.documentElement.msRequestFullscreen);
     }
     
-    static isFullScreen()
-    {
+    static isFullScreen() {
         return !!(document.fullscreenElement ||
                   document.webkitFullscreenElement ||
                   document.mozFullScreenElement ||
