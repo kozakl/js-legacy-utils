@@ -1,13 +1,11 @@
 class StringUtil
 {
-    static lowerFirst(str)
-    {
+    static lowerFirst(str) {
         return str.substr(0, 1).toLowerCase() +
                str.substr(1);
     }
     
-    static upperFirst(str)
-    {
+    static upperFirst(str) {
         return str.substr(0, 1).toUpperCase() +
                str.substr(1);
     }
