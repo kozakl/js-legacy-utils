@@ -70,7 +70,8 @@ class MathUtil
         return Math.abs(x) / x;
     }
     
-    static distanceInCircle(angle1, angle2) {
+    static distanceInCircle(angle1, angle2)
+    {
         const diff = (angle1 > angle2 ?
                       angle1 - angle2 :
                       angle2 - angle1) % 360;
